@@ -1,9 +1,11 @@
 #include <iostream>
+#include <string>
+#include <curl/curl.h>
 
 int main(){
-    int a;
-     std::cout<<"write a number";
-    std::cin>>a;
-    std::cout <<a+9;
+    CURL *curl;
+    CURLcode res;
+    
+    curl=curl_easy_init();
     return 0;
 }
